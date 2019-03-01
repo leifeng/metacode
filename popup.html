@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div style="width:300px">
+      <form class="form">
+        <ul class="items">
+          <li class="group">授权配置</li>
+          <li>
+            <label>按钮位置：</label>
+            <select name="part" id="part">
+              <option value="search">search</option>
+              <option value="tablebar">tableBar</option>
+              <option value="table">table</option>
+            </select>
+          </li>
+          <li class="group">搜索条件配置</li>
+          <li><label>默认值：</label><input name="defaultvalue" id="defaultvalue" /></li>
+          <li><label>数据源类型：</label><input name="sourceType" id="sourceType" /></li>
+          <li>
+            <label>是否需要延时查询：</label><input type="checkbox" name="iswait" id="iswait" />
+          </li>
+          <li>
+            <label>该字段排序规则：</label>
+            <select name="order" id="order">
+              <option value="">无</option>
+              <option value="asc">升序</option>
+              <option value="desc">降序</option>
+            </select>
+          </li>
+        </ul>
+        <button type="submit" class="save">生成</button>
+      </form>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/popup.js"></script>
+  </body>
+</html>
