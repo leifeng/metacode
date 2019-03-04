@@ -4,41 +4,101 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <title>扩展字段</title>
+    <link rel="stylesheet" href="css/amazeui.min.css" />
   </head>
   <body>
     <div style="width:300px">
-      <form class="form">
-        <ul class="items">
-          <li class="group">授权配置</li>
-          <li>
-            <label>按钮位置：</label>
-            <select name="part" id="part">
-              <option value="search">search</option>
-              <option value="tablebar">tableBar</option>
-              <option value="table">table</option>
-            </select>
-          </li>
-          <li class="group">搜索条件配置</li>
-          <li><label>默认值：</label><input name="defaultvalue" id="defaultvalue" /></li>
-          <li><label>数据源类型：</label><input name="sourceType" id="sourceType" /></li>
-          <li>
-            <label>是否需要延时查询：</label><input type="checkbox" name="iswait" id="iswait" />
-          </li>
-          <li>
-            <label>该字段排序规则：</label>
-            <select name="order" id="order">
-              <option value="">无</option>
-              <option value="asc">升序</option>
-              <option value="desc">降序</option>
-            </select>
-          </li>
-        </ul>
-        <button type="submit" class="save">生成</button>
+      <form class="am-form">
+        <fieldset>
+          <section class="am-panel am-panel-primary">
+            <header class="am-panel-hd">
+              <h3 class="am-panel-title">授权相关</h3>
+            </header>
+            <div class="am-panel-bd">
+              <div class="am-form-group am-form-group-sm">
+                <label for="part" class="am-form-label">按钮位置</label>
+                <select name="part" id="part" class="am-input-sm">
+                  <option value="search">search</option>
+                  <option value="tablebar">tableBar</option>
+                  <option value="table">table</option>
+                </select>
+              </div>
+            </div>
+          </section>
+          <section class="am-panel am-panel-primary">
+            <header class="am-panel-hd">
+              <h5 class="am-panel-title">搜索条件相关</h5>
+            </header>
+            <div class="am-panel-bd">
+              <div class="am-form-group am-form-group-sm">
+                <label for="defaultvalue" class="am-form-label">默认值</label>
+                <input
+                  class="am-form-field am-input-sm"
+                  name="defaultvalue"
+                  id="defaultvalue"
+                  autocomplete="off"
+                  placeholder="仅限文本框组件使用"
+                />
+              </div>
+
+              <div class="am-form-group  am-form-group-sm">
+                <label for="sourceType" class="am-form-label">数据源类型</label>
+                <input
+                  class="am-form-field am-input-sm"
+                  name="sourceType"
+                  id="sourceType"
+                  autocomplete="off"
+                  placeholder="仅限下拉组件使用，type的值"
+                />
+              </div>
+
+              <div class="am-checkbox">
+                <label>
+                  <input type="checkbox" name="iswait" id="iswait" /> 延时查询（下拉使用）
+                </label>
+              </div>
+
+              <div class="am-checkbox">
+                <label>
+                  <input type="checkbox" name="showall" id="showall" /> 显示全部（下拉使用）
+                </label>
+              </div>
+
+              <div class="am-form-group am-form-group-sm">
+                <label for="order" class="am-form-label">排序规则</label>
+                <select name="order" id="order" class="am-input-sm">
+                  <option value="">默认排序</option>
+                  <option value="asc">升序</option>
+                  <option value="desc">降序</option>
+                </select>
+              </div>
+            </div>
+          </section>
+          <div class="am-form-group am-form-group-sm">
+            <button type="submit" class="am-btn am-btn-primary am-btn-block am-btn-sm">
+              生成代码
+            </button>
+          </div>
+          <div class="am-form-group am-form-group-sm">
+            <div class="am-input-group am-input-group-sm">
+              <input type="text" class="am-form-field am-input-sm" id="result" />
+              <span class="am-input-group-btn">
+                <button
+                  class="am-btn am-btn-default copybtn"
+                  type="button"
+                  data-clipboard-target="#result"
+                >
+                  copy
+                </button>
+              </span>
+            </div>
+          </div>
+        </fieldset>
       </form>
     </div>
     <script src="js/jquery.js"></script>
+    <script src="js/clipboard.min.js"></script>
     <script src="js/popup.js"></script>
   </body>
 </html>

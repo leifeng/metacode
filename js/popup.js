@@ -6,12 +6,13 @@ function sendMessageToContentScript(message, callback) {
   });
 }
 $('form').submit(function(e) {
-  sendMessageToContentScript({ cmd: 'setext', value: $(this).serializeArray() });
+  sendMessageToContentScript({ cmd: 'setext', value: $(this).serializeArray() }, setResult);
   e.preventDefault();
 });
 function bindForm(json) {
   if (!json) return;
   console.log('bindForm', json);
+  setResult(json);
   if (json.part) {
     $('#part').val(json.part);
   }
@@ -24,8 +25,15 @@ function bindForm(json) {
   if (json.iswait) {
     $('#iswait').prop('checked', true);
   }
+  if (json.showall) {
+    $('#showall').prop('checked', true);
+  }
   if (json.order) {
     $('#order').val(json.order);
   }
 }
+function setResult(json) {
+  $('#result').val(JSON.stringify(json));
+}
 sendMessageToContentScript({ cmd: 'getext' }, bindForm);
+new ClipboardJS('.copybtn');

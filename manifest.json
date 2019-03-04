@@ -8,7 +8,6 @@
     "48": "images/icon.png",
     "128": "images/icon.png"
   },
-  "homepage_url": "https://www.baidu.com",
   "permissions": ["tabs", "storage", "http://*/*", "https://*/*"],
   "background": {
     "scripts": ["js/background.js"],

@@ -1,23 +1,30 @@
 function getExt(sendResponse) {
   var data = $("input[ng-model='data.Ext']").val();
+  console.log('getExt', data);
   if (data) {
     var json = JSON.parse(data);
     sendResponse(json);
   }
 }
-function setExt(arr) {
+function setExt(arr, sendResponse) {
   var obj = {};
   if (Object.prototype.toString.call(arr) === '[object Array]') {
     arr.forEach(function(item) {
-      obj[item.name] = item.value;
+      if (item.value) {
+        obj[item.name] = item.value;
+      }
     });
   }
-  $("input[ng-model='data.Ext']").val(JSON.stringify(obj));
+
+  sendResponse(obj);
+  // $("input[ng-model='data.Ext']")
+  //   .val(JSON.stringify(obj))
+  //   .trigger('change');
 }
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
   switch (request.cmd) {
     case 'setext':
-      setExt(request.value);
+      setExt(request.value, sendResponse);
       break;
     case 'getext':
       getExt(sendResponse);
