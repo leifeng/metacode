@@ -22,11 +22,11 @@ function bindForm(json) {
   if (json.sourceType) {
     $('#sourceType').val(json.sourceType);
   }
-  if (json.iswait) {
-    $('#iswait').prop('checked', true);
+  if (json.isWait) {
+    $('#isWait').prop('checked', true);
   }
-  if (json.showall) {
-    $('#showall').prop('checked', true);
+  if (json.showAll) {
+    $('#showAll').prop('checked', true);
   }
   if (json.order) {
     $('#order').val(json.order);

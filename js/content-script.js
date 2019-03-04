@@ -11,7 +11,7 @@ function setExt(arr, sendResponse) {
   if (Object.prototype.toString.call(arr) === '[object Array]') {
     arr.forEach(function(item) {
       if (item.value) {
-        if (item.name === 'iswait' || item.name === 'showall') {
+        if (item.name === 'isWait' || item.name === 'showAll') {
           obj[item.name] = item.value === 'on' ? true : false;
         } else {
           obj[item.name] = item.value;
