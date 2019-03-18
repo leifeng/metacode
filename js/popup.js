@@ -40,6 +40,12 @@ function bindForm(json) {
   if (json.linkUrl) {
     $('#linkUrl').val(json.linkUrl);
   }
+  if (json.componentName) {
+    $('#componentName').val(json.componentName);
+  }
+  if (json.position) {
+    $('#position').val(json.position);
+  }
 }
 function setResult(json) {
   $('#result').val(JSON.stringify(json));
