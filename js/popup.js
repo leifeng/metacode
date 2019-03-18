@@ -31,14 +31,14 @@ function bindForm(json) {
   if (json.order) {
     $('#order').val(json.order);
   }
-  if (json.metaCode) {
-    $('#metaCode').val(json.metaCode);
-  }
   if (json.linkId) {
     $('#linkId').val(json.linkId.join(','));
   }
   if (json.layout) {
     $('#layout').val(json.layout.join(','));
+  }
+  if (json.linkUrl) {
+    $('#linkUrl').val(json.linkUrl);
   }
 }
 function setResult(json) {
