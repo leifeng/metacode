@@ -31,6 +31,15 @@ function bindForm(json) {
   if (json.order) {
     $('#order').val(json.order);
   }
+  if (json.metaCode) {
+    $('#metaCode').val(json.metaCode);
+  }
+  if (json.linkId) {
+    $('#linkId').val(json.linkId.join(','));
+  }
+  if (json.layout) {
+    $('#layout').val(json.layout.join(','));
+  }
 }
 function setResult(json) {
   $('#result').val(JSON.stringify(json));

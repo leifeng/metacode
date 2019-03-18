@@ -19,6 +19,7 @@
               <div class="am-form-group am-form-group-sm">
                 <label for="part" class="am-form-label">按钮位置</label>
                 <select name="part" id="part" class="am-input-sm">
+                  <option value="">不配置</option>
                   <option value="search">search</option>
                   <option value="tablebar">tableBar</option>
                   <option value="table">table</option>
@@ -41,7 +42,6 @@
                   placeholder="仅限文本框组件使用"
                 />
               </div>
-
               <div class="am-form-group  am-form-group-sm">
                 <label for="sourceType" class="am-form-label">数据源类型</label>
                 <input
@@ -52,19 +52,17 @@
                   placeholder="仅限下拉组件使用，type的值"
                 />
               </div>
-
               <div class="am-checkbox">
                 <label>
-                  <input type="checkbox" name="isWait" id="isWait" /> 延时查询（下拉使用）
+                  <input type="checkbox" name="isWait" id="isWait" />
+                  延时查询（下拉使用，如果数据中有check=true）
                 </label>
               </div>
-
               <div class="am-checkbox">
                 <label>
-                  <input type="checkbox" name="showAll" id="showAll" /> 显示全部（下拉使用）
+                  <input type="checkbox" name="showAll" id="showAll" /> 是否能选择全部（下拉使用）
                 </label>
               </div>
-
               <div class="am-form-group am-form-group-sm">
                 <label for="order" class="am-form-label">排序规则</label>
                 <select name="order" id="order" class="am-input-sm">
@@ -75,6 +73,74 @@
               </div>
             </div>
           </section>
+          <section class="am-panel am-panel-primary">
+            <header class="am-panel-hd">
+              <h3 class="am-panel-title">图表联动</h3>
+            </header>
+            <div class="am-panel-bd">
+              <p class="am-text-warning am-text-xs">元数据需要配置为url授权 -查询</p>
+              <div class="am-form-group am-form-group-sm">
+                <label for="linkId" class="am-form-label">一表多图中chart关联id</label>
+                <textarea
+                  class="am-form-field am-input-sm"
+                  name="linkId"
+                  id="linkId"
+                  rows="5"
+                  autocomplete="off"
+                  placeholder="多个id以逗号隔开"
+                ></textarea>
+              </div>
+            </div>
+          </section>
+          <section class="am-panel am-panel-primary">
+            <header class="am-panel-hd">
+              <h3 class="am-panel-title">DashBoard相关</h3>
+            </header>
+            <div class="am-panel-bd">
+              <p class="am-text-warning am-text-xs">元数据需要配置为表格列-自定义列</p>
+              <div class="am-form-group am-form-group-sm">
+                <label for="layout" class="am-form-label">布局</label>
+                <input
+                  class="am-form-field am-input-sm"
+                  name="layout"
+                  id="layout"
+                  autocomplete="off"
+                  placeholder="以逗号分隔，例如:1,2,1"
+                />
+              </div>
+              <p class="am-text-warning am-text-xs">元数据需要配置为页面元素-自定义元素</p>
+              <div class="am-form-group am-form-group-sm">
+                <label for="dashBoardTitle" class="am-form-label">标题</label>
+                <input
+                  class="am-form-field am-input-sm"
+                  name="dashBoardTitle"
+                  id="dashBoardTitle"
+                  autocomplete="off"
+                  placeholder=""
+                />
+              </div>
+              <div class="am-form-group am-form-group-sm">
+                <label for="componentName" class="am-form-label">组件名称</label>
+                <input
+                  class="am-form-field am-input-sm"
+                  name="componentName"
+                  id="componentName"
+                  autocomplete="off"
+                  placeholder=""
+                />
+              </div>
+              <div class="am-form-group am-form-group-sm">
+                <label for="position" class="am-form-label">初始位置</label>
+                <input
+                  class="am-form-field am-input-sm"
+                  name="position"
+                  id="position"
+                  autocomplete="off"
+                  placeholder="1,0 表示第二（列|行）的第一个元素"
+                />
+              </div>
+            </div>
+          </section>
           <div class="am-form-group am-form-group-sm">
             <button type="submit" class="am-btn am-btn-primary am-btn-block am-btn-sm">
               生成代码
@@ -82,7 +148,7 @@
           </div>
           <div class="am-form-group am-form-group-sm">
             <div class="am-input-group am-input-group-sm">
-              <input type="text" class="am-form-field am-input-sm" id="result" />
+              <input type="text" class="am-form-field am-input-sm" id="result" autocomplete="off" />
               <span class="am-input-group-btn">
                 <button
                   class="am-btn am-btn-default copybtn"

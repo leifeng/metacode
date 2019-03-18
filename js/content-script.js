@@ -13,6 +13,8 @@ function setExt(arr, sendResponse) {
       if (item.value) {
         if (item.name === 'isWait' || item.name === 'showAll') {
           obj[item.name] = item.value === 'on' ? true : false;
+        } else if (item.name === 'linkId' || item.name === 'layout') {
+          obj[item.name] = item.value.split(',');
         } else {
           obj[item.name] = item.value;
         }
