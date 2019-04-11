@@ -19,5 +19,7 @@ git clone https://github.com/leifeng/metacode
 | linkId        | ""                                                             | 用于一表多图的联动关系               |
 | linkUrl       | ""                                                             | 下钻页面地址                         |
 | layout        | ""                                                             | 用于 dashboard 中的布局方式          |
+| group         | ""                                                             | 用于 dashboard 布局组名              |
 | componentName | ""                                                             | 用于 dashboard 中的组件名称          |
 | position      | ""                                                             | 用于 dashboard 中的组件位置信息      |
+| layoutGroup   | ""                                                             | 用于 dashboard 对应布局的组名        |

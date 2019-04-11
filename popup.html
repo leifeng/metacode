@@ -104,9 +104,19 @@
           </section>
           <section class="am-panel am-panel-primary">
             <header class="am-panel-hd">
-              <h3 class="am-panel-title">DashBoard相关</h3>
+              <h3 class="am-panel-title">DashBoard布局</h3>
             </header>
             <div class="am-panel-bd">
+              <div class="am-form-group am-form-group-sm">
+                <label for="group" class="am-form-label">布局组名</label>
+                <input
+                  class="am-form-field am-input-sm"
+                  name="group"
+                  id="group"
+                  autocomplete="off"
+                  placeholder=""
+                />
+              </div>
               <p class="am-text-warning am-text-xs">元数据需要配置为表格列-自定义列</p>
               <div class="am-form-group am-form-group-sm">
                 <label for="layout" class="am-form-label">布局</label>
@@ -116,6 +126,23 @@
                   id="layout"
                   autocomplete="off"
                   placeholder="以逗号分隔，例如:1,2,1"
+                />
+              </div>
+            </div>
+          </section>
+          <section class="am-panel am-panel-primary">
+            <header class="am-panel-hd">
+              <h3 class="am-panel-title">DashBoard子组件配置</h3>
+            </header>
+            <div class="am-panel-bd">
+              <div class="am-form-group am-form-group-sm">
+                <label for="layoutGroup" class="am-form-label">布局组名</label>
+                <input
+                  class="am-form-field am-input-sm"
+                  name="layoutGroup"
+                  id="layoutGroup"
+                  autocomplete="off"
+                  placeholder=""
                 />
               </div>
               <p class="am-text-warning am-text-xs">元数据需要配置为url授权-查询</p>
