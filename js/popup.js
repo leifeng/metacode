@@ -6,6 +6,7 @@ function sendMessageToContentScript(message, callback) {
   });
 }
 $('form').submit(function(e) {
+  console.log($(this).serializeArray());
   sendMessageToContentScript({ cmd: 'setext', value: $(this).serializeArray() }, setResult);
   e.preventDefault();
 });
@@ -28,6 +29,11 @@ function bindForm(json) {
   if (json.showAll) {
     $('#showAll').prop('checked', true);
   }
+  if (json.btnShow) {
+    $('#btnShow').val('true');
+  } else {
+    $('#btnShow').val('false');
+  }
   if (json.order) {
     $('#order').val(json.order);
   }
@@ -45,6 +51,9 @@ function bindForm(json) {
   }
   if (json.position) {
     $('#position').val(json.position);
+  }
+  if (json.layoutLink) {
+    $('#layoutLink').val(json.layoutLink);
   }
 }
 function setResult(json) {

@@ -25,6 +25,13 @@
                   <option value="table">table</option>
                 </select>
               </div>
+              <div class="am-form-group am-form-group-sm">
+                <label for="btnShow" class="am-form-label">是否要显示该按钮</label>
+                <select name="btnShow" id="btnShow" class="am-input-sm">
+                  <option value="true">显示</option>
+                  <option value="false">不显示</option>
+                </select>
+              </div>
             </div>
           </section>
           <section class="am-panel am-panel-primary">
@@ -147,13 +154,23 @@
               </div>
               <p class="am-text-warning am-text-xs">元数据需要配置为url授权-查询</p>
               <div class="am-form-group am-form-group-sm">
+                <label for="layoutLink" class="am-form-label">标题链接</label>
+                <input
+                  class="am-form-field am-input-sm"
+                  name="layoutLink"
+                  id="layoutLink"
+                  autocomplete="off"
+                  placeholder="url地址"
+                />
+              </div>
+              <div class="am-form-group am-form-group-sm">
                 <label for="componentName" class="am-form-label">组件名称</label>
                 <input
                   class="am-form-field am-input-sm"
                   name="componentName"
                   id="componentName"
                   autocomplete="off"
-                  placeholder=""
+                  placeholder="React组件名称"
                 />
               </div>
               <div class="am-form-group am-form-group-sm">

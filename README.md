@@ -11,6 +11,7 @@ git clone https://github.com/leifeng/metacode
 | 字段          | 值                                                             | 说明                                 |
 | ------------- | -------------------------------------------------------------- | ------------------------------------ |
 | part          | ""(无),search(搜索位置),tablebar(列表上方),table(列表更多操作) | 授权按钮位置                         |
+| btnShow       | true(默认)                                                     | 是否显示授权按钮                     |
 | defaultvalue  | ""                                                             | 用于输入框的默认值                   |
 | sourceType    | ""                                                             | 有数据源下拉列表中的 type 值         |
 | isWait        | false                                                          | 是否延时加载，用于有默认值的下拉组件 |
@@ -23,3 +24,4 @@ git clone https://github.com/leifeng/metacode
 | componentName | ""                                                             | 用于 dashboard 中的组件名称          |
 | position      | ""                                                             | 用于 dashboard 中的组件位置信息      |
 | layoutGroup   | ""                                                             | 用于 dashboard 对应布局的组名        |
+| layoutLink    | ""                                                             | 标题链接                             |
