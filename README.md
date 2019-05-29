@@ -23,5 +23,6 @@ git clone https://github.com/leifeng/metacode
 | group         | ""                                                             | 用于 dashboard 布局组名              |
 | componentName | ""                                                             | 用于 dashboard 中的组件名称          |
 | position      | ""                                                             | 用于 dashboard 中的组件位置信息      |
+| height        | 默认 300                                                       | 用于 dashboard 中的组件高度          |
 | layoutGroup   | ""                                                             | 用于 dashboard 对应布局的组名        |
 | layoutLink    | ""                                                             | 标题链接                             |

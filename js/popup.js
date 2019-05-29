@@ -55,6 +55,9 @@ function bindForm(json) {
   if (json.layoutLink) {
     $('#layoutLink').val(json.layoutLink);
   }
+  if (json.height) {
+    $('#height').val(json.height);
+  }
 }
 function setResult(json) {
   $('#result').val(JSON.stringify(json));
