@@ -58,6 +58,9 @@ function bindForm(json) {
   if (json.height) {
     $('#height').val(json.height);
   }
+  if (json.type300) {
+    $('#type300').val(json.type300);
+  }
 }
 function setResult(json) {
   $('#result').val(JSON.stringify(json));
