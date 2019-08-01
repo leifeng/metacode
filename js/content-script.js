@@ -11,7 +11,7 @@ function setExt(arr, sendResponse) {
   if (Object.prototype.toString.call(arr) === '[object Array]') {
     arr.forEach(function(item) {
       if (item.value) {
-        if (item.name === 'isWait' || item.name === 'showAll') {
+        if (item.name === 'isWait' || item.name === 'showAll' || item.name === 'btnShow') {
           obj[item.name] = item.value === 'on' ? true : false;
         } else if (item.name === 'linkId' || item.name === 'layout') {
           obj[item.name] = item.value.split(',');

@@ -25,13 +25,13 @@
                   <option value="table">table</option>
                 </select>
               </div>
-              <div class="am-form-group am-form-group-sm">
+              <!-- <div class="am-form-group am-form-group-sm">
                 <label for="btnShow" class="am-form-label">是否要显示该按钮</label>
                 <select name="btnShow" id="btnShow" class="am-input-sm">
-                  <option value="true">显示</option>
-                  <option value="false">不显示</option>
+                  <option value="on">显示</option>
+                  <option value="off">不显示</option>
                 </select>
-              </div>
+              </div> -->
             </div>
           </section>
           <section class="am-panel am-panel-primary">
@@ -81,9 +81,67 @@
               <div class="am-form-group am-form-group-sm">
                 <label for="type300" class="am-form-label">组合控件类型</label>
                 <select name="type300" id="type300" class="am-input-sm">
+                  <option value="">无</option>
                   <option value="0">单选</option>
                   <option value="1">多选</option>
                 </select>
+              </div>
+            </div>
+          </section>
+          <section class="am-panel am-panel-primary">
+            <header class="am-panel-hd">
+              <h3 class="am-panel-title">自定义元素</h3>
+            </header>
+            <div class="am-panel-bd">
+              <div class="am-form-group am-form-group-sm">
+                <label for="extendType" class="am-form-label">元素类型</label>
+                <div class="am-form-group am-form-group-sm">
+                  <label for="extendBindKey" class="am-form-label">绑定值（何时显示）</label>
+                  <input
+                    class="am-form-field am-input-sm"
+                    name="extendBindKey"
+                    id="extendBindKey"
+                    autocomplete="off"
+                    placeholder=""
+                  />
+                </div>
+                <select name="extendType" id="extendType" class="am-input-sm">
+                  <option value="">无</option>
+                  <option value="202">单选下拉</option>
+                  <option value="207">多选下拉</option>
+                  <option value="300">组合控件</option>
+                  <option value="200">文本框</option>
+                </select>
+              </div>
+              <div class="am-form-group am-form-group-sm">
+                <label for="extendLabel" class="am-form-label">中文名称</label>
+                <input
+                  class="am-form-field am-input-sm"
+                  name="extendLabel"
+                  id="extendLabel"
+                  autocomplete="off"
+                  placeholder="中文名称"
+                />
+              </div>
+              <div class="am-form-group am-form-group-sm">
+                <label for="extendName" class="am-form-label">名称</label>
+                <input
+                  class="am-form-field am-input-sm"
+                  name="extendName"
+                  id="extendName"
+                  autocomplete="off"
+                  placeholder="字段名称"
+                />
+              </div>
+              <div class="am-form-group am-form-group-sm">
+                <label for="extendSource" class="am-form-label">数据源</label>
+                <input
+                  class="am-form-field am-input-sm"
+                  name="extendSource"
+                  id="extendSource"
+                  autocomplete="off"
+                  placeholder="同开发中心配置"
+                />
               </div>
             </div>
           </section>

@@ -27,3 +27,8 @@ git clone https://github.com/leifeng/metacode
 | height        | 默认 300                                                       | 用于 dashboard 中的组件高度          |
 | layoutGroup   | ""                                                             | 用于 dashboard 对应布局的组名        |
 | layoutLink    | ""                                                             | 标题链接                             |
+| extendBindKey | ""                                                             | 扩展组件关联值                       |
+| extendType    | 同元素类型                                                     | 扩展组件类型                         |
+| extendLabel   | ""                                                             | 扩展组件中文                         |
+| extendName    | ""                                                             | 扩展组件字段名                       |
+| extendSource  | ""                                                             | 扩展组件数据源                       |

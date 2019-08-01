@@ -29,11 +29,11 @@ function bindForm(json) {
   if (json.showAll) {
     $('#showAll').prop('checked', true);
   }
-  if (json.btnShow) {
-    $('#btnShow').val('true');
-  } else {
-    $('#btnShow').val('false');
-  }
+  // if (json.btnShow) {
+  //   $('#btnShow').val('true');
+  // } else {
+  //   $('#btnShow').val('false');
+  // }
   if (json.order) {
     $('#order').val(json.order);
   }
@@ -60,6 +60,21 @@ function bindForm(json) {
   }
   if (json.type300) {
     $('#type300').val(json.type300);
+  }
+  if (json.extendType) {
+    $('#extendType').val(json.extendType);
+  }
+  if (json.extendLabel) {
+    $('#extendLabel').val(json.extendLabel);
+  }
+  if (json.extendName) {
+    $('#extendName').val(json.extendName);
+  }
+  if (json.extendSource) {
+    $('#extendSource').val(json.extendSource);
+  }
+  if (json.extendBindKey) {
+    $('#extendBindKey').val(json.extendBindKey);
   }
 }
 function setResult(json) {
