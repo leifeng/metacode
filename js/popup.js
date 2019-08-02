@@ -73,8 +73,8 @@ function bindForm(json) {
   if (json.extendSource) {
     $('#extendSource').val(json.extendSource);
   }
-  if (json.extendBindKey) {
-    $('#extendBindKey').val(json.extendBindKey);
+  if (json.extendBindValue) {
+    $('#extendBindValue').val(json.extendBindValue);
   }
   if (json.extendBindName) {
     $('#extendBindName').val(json.extendBindName);
