@@ -76,6 +76,9 @@ function bindForm(json) {
   if (json.extendBindKey) {
     $('#extendBindKey').val(json.extendBindKey);
   }
+  if (json.extendBindName) {
+    $('#extendBindName').val(json.extendBindName);
+  }
 }
 function setResult(json) {
   $('#result').val(JSON.stringify(json));
