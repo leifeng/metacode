@@ -65,10 +65,12 @@
                   延时查询（下拉使用，如果数据中有check=true）
                 </label>
               </div>
-              <div class="am-checkbox">
-                <label>
-                  <input type="checkbox" name="showAll" id="showAll" /> 是否能选择全部（下拉使用）
-                </label>
+              <div class="am-form-group am-form-group-sm">
+                <label for="showAll" class="am-form-label">是否能选择全部</label>
+                <select name="showAll" id="showAll" class="am-input-sm">
+                  <option value="on">有全部</option>
+                  <option value="off">无全部</option>
+                </select>
               </div>
               <div class="am-form-group am-form-group-sm">
                 <label for="order" class="am-form-label">排序规则</label>

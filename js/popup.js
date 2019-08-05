@@ -27,7 +27,9 @@ function bindForm(json) {
     $('#isWait').prop('checked', true);
   }
   if (json.showAll) {
-    $('#showAll').prop('checked', true);
+    $('#showAll').val('on');
+  } else {
+    $('#showAll').val('off');
   }
   // if (json.btnShow) {
   //   $('#btnShow').val('true');
