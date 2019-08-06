@@ -66,12 +66,6 @@ function bindForm(json) {
   if (json.extendType) {
     $('#extendType').val(json.extendType);
   }
-  if (json.extendLabel) {
-    $('#extendLabel').val(json.extendLabel);
-  }
-  if (json.extendName) {
-    $('#extendName').val(json.extendName);
-  }
   if (json.extendSource) {
     $('#extendSource').val(json.extendSource);
   }

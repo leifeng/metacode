@@ -30,6 +30,4 @@ git clone https://github.com/leifeng/metacode
 | extendBindName  | ""                                                             | 扩展组件关联字段名                   |
 | extendBindValue | ""                                                             | 扩展组件关联值                       |
 | extendType      | 同元素类型                                                     | 扩展组件类型                         |
-| extendLabel     | ""                                                             | 扩展组件中文                         |
-| extendName      | ""                                                             | 扩展组件字段名                       |
 | extendSource    | ""                                                             | 扩展组件数据源                       |
