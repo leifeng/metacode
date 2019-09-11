@@ -60,6 +60,9 @@ function bindForm(json) {
   if (json.height) {
     $('#height').val(json.height);
   }
+  if (json.padding) {
+    $('#padding').val(json.padding);
+  }
   if (json.type300) {
     $('#type300').val(json.type300);
   }
