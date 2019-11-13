@@ -78,6 +78,11 @@ function bindForm(json) {
   if (json.extendBindName) {
     $('#extendBindName').val(json.extendBindName);
   }
+  if (json.mutex) {
+    json.mutex.map((item, index) => {
+      $('#mutex' + index).val(item);
+    });
+  }
 }
 function setResult(json) {
   $('#result').val(JSON.stringify(json));

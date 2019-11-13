@@ -32,3 +32,4 @@ git clone https://github.com/leifeng/metacode
 | extendBindValue | ""                                                             | 扩展组件关联值                       |
 | extendType      | 同元素类型                                                     | 扩展组件类型                         |
 | extendSource    | ""                                                             | 扩展组件数据源                       |
+| mutex           | []                                                             | 授权互斥关系 (key@value)             |

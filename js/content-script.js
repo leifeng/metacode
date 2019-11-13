@@ -7,7 +7,7 @@ function getExt(sendResponse) {
   }
 }
 function setExt(arr, sendResponse) {
-  var obj = {};
+  var obj = { mutex: [] };
   if (Object.prototype.toString.call(arr) === '[object Array]') {
     arr.forEach(function(item) {
       if (item.value) {
@@ -15,13 +15,18 @@ function setExt(arr, sendResponse) {
           obj[item.name] = item.value === 'on' ? true : false;
         } else if (item.name === 'linkId' || item.name === 'layout') {
           obj[item.name] = item.value.split(',');
+        } else if (item.name === 'mutex') {
+          obj['mutex'].push(item.value);
         } else {
           obj[item.name] = item.value;
         }
       }
     });
   }
-
+  if(obj.mutex.length===0){
+    delete obj.mutex
+  }
+  console.log('setExt', obj);
   sendResponse(obj);
   // $("input[ng-model='data.Ext']")
   //   .val(JSON.stringify(obj))
