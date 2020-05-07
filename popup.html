@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/amazeui.min.css" />
   </head>
   <body>
-    <div style="width:300px">
+    <div style="width: 300px;">
       <form class="am-form">
         <fieldset>
           <section class="am-panel am-panel-primary">
@@ -25,6 +25,13 @@
                   <option value="table">table</option>
                 </select>
               </div>
+            </div>
+          </section>
+          <section class="am-panel am-panel-primary">
+            <header class="am-panel-hd">
+              <h3 class="am-panel-title">授权互斥关系</h3>
+            </header>
+            <div class="am-panel-bd">
               <div class="am-form-group am-form-group-sm">
                 <label for="mutex" class="am-form-label">互斥关系</label>
                 <input
@@ -35,13 +42,6 @@
                   placeholder="表单key"
                 />
               </div>
-            </div>
-          </section>
-          <section class="am-panel am-panel-primary">
-            <header class="am-panel-hd">
-              <h3 class="am-panel-title">授权互斥关系</h3>
-            </header>
-            <div class="am-panel-bd">
               <div class="am-form-group am-form-group-sm">
                 <label for="mutex0" class="am-form-label">key@url</label>
                 <input
@@ -89,7 +89,7 @@
                   placeholder="仅限文本框组件使用"
                 />
               </div>
-              <div class="am-form-group  am-form-group-sm">
+              <div class="am-form-group am-form-group-sm">
                 <label for="sourceType" class="am-form-label">数据源类型</label>
                 <input
                   class="am-form-field am-input-sm"
@@ -103,6 +103,12 @@
                 <label>
                   <input type="checkbox" name="isWait" id="isWait" />
                   延时查询（下拉使用，如果数据中有check=true）
+                </label>
+              </div>
+              <div class="am-checkbox">
+                <label>
+                  <input type="checkbox" name="canSort" id="canSort" />
+                  可排序（列表使用）
                 </label>
               </div>
               <div class="am-form-group am-form-group-sm">
