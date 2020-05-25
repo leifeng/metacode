@@ -1,11 +1,11 @@
 function sendMessageToContentScript(message, callback) {
-  chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) {
-    chrome.tabs.sendMessage(tabs[0].id, message, function(response) {
+  chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
+    chrome.tabs.sendMessage(tabs[0].id, message, function (response) {
       if (callback) callback(response);
     });
   });
 }
-$('form').submit(function(e) {
+$('form').submit(function (e) {
   console.log($(this).serializeArray());
   sendMessageToContentScript({ cmd: 'setext', value: $(this).serializeArray() }, setResult);
   e.preventDefault();
@@ -77,6 +77,9 @@ function bindForm(json) {
   }
   if (json.extendBindName) {
     $('#extendBindName').val(json.extendBindName);
+  }
+  if (json.regular) {
+    $('#regular').val(json.regular);
   }
   if (json.mutex) {
     json.mutex.map((item, index) => {

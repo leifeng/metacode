@@ -33,3 +33,11 @@ git clone https://github.com/leifeng/metacode
 | extendType      | 同元素类型                                                     | 扩展组件类型                         |
 | extendSource    | ""                                                             | 扩展组件数据源                       |
 | mutex           | []                                                             | 授权互斥关系 (key@value)             |
+| regular         | ""                                                             | 正则对象                             |
+
+### 正则说明
+
+| key       | 说明     |
+| --------- | -------- |
+| maxLength | 最长长度 |
+| minLength | 最小长度 |
