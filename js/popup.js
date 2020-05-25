@@ -26,6 +26,9 @@ function bindForm(json) {
   if (json.isWait) {
     $('#isWait').prop('checked', true);
   }
+  if (json.canSort) {
+    $('#canSort').prop('checked', true);
+  }
   if (json.showAll) {
     $('#showAll').val('on');
   } else {

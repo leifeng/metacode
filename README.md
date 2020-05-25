@@ -14,6 +14,7 @@ git clone https://github.com/leifeng/metacode
 | btnShow         | true(默认)                                                     | 是否显示授权按钮                     |
 | defaultvalue    | ""                                                             | 用于输入框的默认值                   |
 | sourceType      | ""                                                             | 有数据源下拉列表中的 type 值         |
+| canSort         | false                                                          | 是否可排序，用于 table 列表          |
 | isWait          | false                                                          | 是否延时加载，用于有默认值的下拉组件 |
 | showAll         | false                                                          | 是否显示“全部”，用于下拉组件         |
 | type300         | 0(单选)，1(多选)                                               | 组合控件类型（用于区分联动）         |
