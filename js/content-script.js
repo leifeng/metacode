@@ -7,7 +7,7 @@ function getExt(sendResponse) {
   }
 }
 function setExt(arr, sendResponse) {
-  var obj = { mutex: [] };
+  var obj = { mutex: [], regular: {} };
   if (Object.prototype.toString.call(arr) === '[object Array]') {
     arr.forEach(function (item) {
       if (item.value) {
@@ -22,6 +22,8 @@ function setExt(arr, sendResponse) {
           obj[item.name] = item.value.split(',');
         } else if (item.name === 'mutex') {
           obj['mutex'].push(item.value);
+        } else if (item.name === 'mutex') {
+          obj['regular'] = JSON.parse(item.value);
         } else {
           obj[item.name] = item.value;
         }

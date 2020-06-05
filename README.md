@@ -35,6 +35,8 @@ git clone https://github.com/leifeng/metacode
 | extendSource    | ""                                                             | 扩展组件数据源                       |
 | mutex           | []                                                             | 授权互斥关系 (key@value)             |
 | regular         | ""                                                             | 正则对象                             |
+| regularTip      | ""                                                             | 正则错误提示                         |
+| format          | ""                                                             | 时间格式化                           |
 
 ### 正则说明
 

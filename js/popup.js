@@ -84,10 +84,16 @@ function bindForm(json) {
   if (json.regular) {
     $('#regular').val(json.regular);
   }
+  if (json.regularTip) {
+    $('#regularTip').val(json.regularTip);
+  }
   if (json.mutex) {
     json.mutex.map((item, index) => {
       $('#mutex' + index).val(item);
     });
+  }
+  if (json.format) {
+    $('#format').val(json.format);
   }
 }
 function setResult(json) {
