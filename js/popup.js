@@ -87,6 +87,9 @@ function bindForm(json) {
   if (json.regularTip) {
     $('#regularTip').val(json.regularTip);
   }
+  if (json.hideValue) {
+    $('#hideValue').val(json.hideValue);
+  }
   if (json.mutex) {
     json.mutex.map((item, index) => {
       $('#mutex' + index).val(item);
