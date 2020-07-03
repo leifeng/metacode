@@ -11,6 +11,8 @@ git clone https://github.com/leifeng/metacode
 | 字段            | 值                                                                               | 说明                                                         |
 | --------------- | -------------------------------------------------------------------------------- | ------------------------------------------------------------ |
 | part            | ""(无),search(搜索位置),tablebar(列表上方),table(列表更多操作)                   | 授权按钮位置                                                 |
+| extendSource    | "normal"(普通值),"url"(url 参数),"localStorage"(本地存储)                        | 用于扩展值来源                                               |
+| extendValus     | "",逗号隔开比如"id,name,abc"                                                     | 用于扩展值（类似 hideValue）                                 |
 | btnShow         | true(默认)                                                                       | 是否显示授权按钮                                             |
 | defaultvalue    | ""                                                                               | 用于输入框的默认值                                           |
 | hideValue       | ""（普通值）,"query_key"(获取 url 中的值),"localStorage_key"（获取本地存储的值） | 用于隐藏表单（208）默认值或者 url 中的 key、本地存储中的 key |

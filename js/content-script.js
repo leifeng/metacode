@@ -22,7 +22,7 @@ function setExt(arr, sendResponse) {
           obj[item.name] = item.value.split(',');
         } else if (item.name === 'mutex') {
           obj['mutex'].push(item.value);
-        } else if (item.name === 'mutex') {
+        } else if (item.name === 'regular') {
           obj['regular'] = JSON.parse(item.value);
         } else {
           obj[item.name] = item.value;

@@ -90,6 +90,12 @@ function bindForm(json) {
   if (json.hideValue) {
     $('#hideValue').val(json.hideValue);
   }
+  if (json.extendSource) {
+    $('#extendSource').val(json.extendSource);
+  }
+  if (json.extendValus) {
+    $('#extendValus').val(json.extendValus);
+  }
   if (json.mutex) {
     json.mutex.map((item, index) => {
       $('#mutex' + index).val(item);
